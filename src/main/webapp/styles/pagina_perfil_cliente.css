@@ -1,0 +1,160 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
+/*Body*/
+
+.bodyheader {
+	margin: 0;
+	background:#fff8e6;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+        height:900px;
+}
+
+
+/**########################################################
+** 
+**     M     E     N     U           I     Z     Q
+**
+**#########################################################
+**/
+
+.menu{
+  margin:0;
+  padding-top:2px;
+  padding-inline-start: 0;
+}
+
+.menu li{
+    list-style: none;
+    font-size: 20px;
+    font-weight: normal;
+    border: 2px solid #000;
+    width: 100%;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+    text-align:center;
+    margin-top: -2px;
+    margin-left: -2px;
+    display:inline-block;
+}
+
+
+.container{
+  height: 100%;
+  width: 23vw;
+  border-right:2px solid #000;
+  position: relative;
+  box-shadow: 5px -3px 4px -5px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 5px -3px 4px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px -3px 4px -5px rgba(0,0,0,0.75);
+}
+
+.menu li:hover{
+  background-color: #fddbcc;
+}
+
+/**########################################################
+** 
+**     I     N     S     I     D     E
+**
+**#########################################################
+**/
+
+.container2{
+    position:relative;
+    text-align: center;
+    font-size:30px;
+    left:45%;
+    top:-75%;
+    width:40vw;
+    margin:0;
+}
+
+.contenido {
+    position: absolute;
+    top: 20%;
+    right: 8%;
+    transform: translate(0, -50%);
+    text-align: center;
+    font-size: 30px;
+    font-weight: normal;
+    width: 60%;
+    margin: 0;
+}
+
+
+/*Para que no se pueda seleccionar ningún texto*/
+.noSelect{
+    user-select: none;
+}
+.container2 button{
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+
+}
+
+/**########################################################
+** 
+**     FORMULARIO editarPerfil
+**
+**#########################################################
+**/
+
+#editarPerfil form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 45%;
+}
+
+#editarPerfil label {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#editarPerfil input[type="text"],
+#editarPerfil input[type="tel"],
+#editarPerfil input[type="password"],
+#editarPerfil input[type="email"],
+#editarPerfil textarea {
+  width: 80%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#editarPerfil button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#editarPerfil button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+#editarPerfil textarea {
+  height: 100px;
+}
+ 
+.contenido #editarPerfil input {
+  width: 80%;
+  max-width: 400px; /* Ajusta este valor según tus preferencias */
+}

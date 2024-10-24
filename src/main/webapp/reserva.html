@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="styles/comun.css">
+    <link rel="stylesheet" href="styles/reserva.css">
+    <link rel="stylesheet" href="styles/login-signup.css">
+    <script src="script/script.js"></script>
+
+    <title>QuickBook - Reserva</title>
+</head>
+
+<body class="bodyheader noSelect">
+    
+    <!-- Fondo difuminado y cuadro flotante para iniciar sesión -->
+    <div class="modal-background" id="modalBackground"></div>
+    <div class="modal" id="modalLogin">
+        <div class="modal-header">
+            <h2>Iniciar sesión en QuickBook</h2>
+            <span class="close" onclick="cerrarModal()">×</span>
+        </div>
+        <div class="modal-body">
+            <form action="inicioSesion" method="post">
+                <div class="input-container">
+                    <label for="username" class="fas fa-user"></label>
+                    <input type="text" id="username" name="username" placeholder="Usuario" required>
+                </div>
+                <div class="input-container">
+                    <label for="password" class="fas fa-lock"></label>
+                    <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                </div>
+                <input type="submit" class="boton" value="Iniciar sesión">
+            </form>
+            <div class="modal-footer">
+                <p>¿No tienes una cuenta? <a href="#" onclick="mostrarSignUp()">Regístrate aquí</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fondo difuminado y cuadro flotante para registrarse -->
+    <div class="modal-background" id="modalBackground"></div>
+    <div class="modal" id="modalSignUp">
+        <div class="modal-header">
+            <h2>Registrarse en QuickBook</h2>
+            <span class="close" onclick="cerrarModal()">×</span>
+        </div>
+        <div class="modal-body">
+            <form action="registroCliente" method="post">
+                <div class="input-container">
+                    <label for="nombreC"><i class="fas fa-user"></i></label>
+                    <input maxlength="30" type="text" id="nombreC" name="nombreC" placeholder="Nombre" required>
+                </div>
+
+                 <div class="input-container">
+                    <label for="apellidosC"><i class="fas fa-user-tie"></i></label>
+                    <input maxlength="30" type="text" id="apellidosC" name="apellidosC" placeholder="Apellidos" required>
+                </div>
+                
+                 <div class="input-container">
+                        <label for="idUsuarioC"><i class="fas fa-user-tie"></i></label>
+                        <input maxlength="30" type="text" id="idUsuarioC" name="idUsuarioC" placeholder="idUsuario" required>
+                    </div>
+                
+                <div class="input-container">
+                    <label for="emailC" class="fas fa-envelope"></label>
+                    <input maxlength="50" type="email" id="emailC" name="emailC" placeholder="Correo electrónico" required>
+                </div>
+
+                <div class="input-container">
+                    <label for="phoneC" class="fas fa-phone-alt"></label>
+                    <input maxlength="15" type="tel" id="phone" name="phone" placeholder="Número de teléfono (Opcional)">
+                </div>
+
+                <div class="input-container">
+                    <label for="direccionC" class="fas fa-location-arrow"></label>
+                    <input maxlength="50" type="text" id="direccionC" name="direccionC" placeholder="Dirección" required>
+                </div>
+
+                <div class="input-container">
+                    <label for="passwordC" class="fas fa-lock"></label>
+                    <input maxlength="20" type="password" id="passwordC" name="passwordC" placeholder="Contraseña" required>
+                </div>
+
+                <input type="submit" class="boton" value="Registrarse">
+            </form>
+            <div class="modal-footer">
+                <p>¿Ya tienes una cuenta? <a href="#" onclick="mostrarLogin()">Inicia sesión aquí</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Fondo difuminado y cuadro flotante para registrarse empresa -->
+    <div class="modal-background" id="modalBackground"></div>
+    <div class="modal" id="modalSignUp-empresa">
+        <div class="modal-header">
+            <h2>Registrarse en QuickBook</h2>
+            <span class="close" onclick="cerrarModal()">×</span>
+        </div>
+        <div class="modal-body">
+            <form action="registroEmpresa" method="post">
+                <div class="input-container">
+                    <label for="fullname-empresa"><i class="fas fa-user"></i></label>
+                    <input maxlength="30" type="text" id="fullname-empresa" name="fullname-empresa" placeholder="Nombre empresa" required>
+                </div>
+                
+                 <div class="input-container">
+                        <label for="idUsuario-empresa"><i class="fas fa-user-tie"></i></label>
+                        <input maxlength="30" type="text" id="idUsuario-empresa" name="idUsuario-empresa" placeholder="idEmpresa" required>
+                    </div>
+
+                <div class="input-container">
+                    <label for="email-empresa" class="fas fa-envelope"></label>
+                    <input maxlength="50" type="email" id="email-empresa" name="email-empresa" placeholder="Correo electrónico" required>
+                </div>
+
+                <div class="input-container">
+                    <label for="phone-empresa" class="fas fa-phone-alt"></label>
+                    <input maxlength="15" type="tel" id="phone-empresa" name="phone-empresa" placeholder="Número de teléfono" required>
+                </div>
+
+                <div class="input-container">
+                    <label for="location-empresa" class="fas fa-location-arrow"></label>
+                    <input maxlength="50" type="text" id="direccion-empresa" name="direccion-empresa" placeholder="Dirección" required>
+                </div>
+                
+
+                <div class="input-container">
+                    <label for="password-empresa" class="fas fa-lock"></label>
+                    <input maxlength="20" type="password" id="password-empresa" name="password-empresa" placeholder="Contraseña" required>
+                </div>
+
+                <input type="submit" class="boton" value="Registrarse">
+            </form>
+            <div class="modal-footer">
+                <p>¿Ya tienes una cuenta? <a href="#" onclick="mostrarLogin()">Inicia sesión aquí</a></p>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <nav>
+            <a href="index.jsp" class="logo"><img src="img/logo_quickbook.png" alt="Logo de Quickbook" class="logo"></a>
+            <div class="right">
+                <a href="#" id="neg" onclick="mostrarSignUpEmpresa()">Añade tu negocio</a>
+                <a href="#" class="profile" onclick="mostrarLogin()"><img src=" img/profileIcon.png" alt="Icono del usuario"
+                        class="profile"></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="banner"><img src="img/banner.png" alt="Banner"></div>
+
+    <div class="container1">
+        <h1 class="headerR">Peluquería Innove - Reserva</h1>
+        <div class="chooseDate">Escoge un dia de los disponibles:
+
+            <div class="calendario">
+                <table class="caldata">
+                    <tr class="actualMonth">
+                        <th class="chooseMonth"><b>&lt;</b>
+                        </th>
+                        <th colspan="5"><b>ENERO</b></th>
+                        <th class="chooseMonth"><b>&gt;</b></th>
+                    </tr>
+                    <tr class="days">
+                        <th>L</th>
+                        <th> M </th>
+                        <th> X </th>
+                        <th> J </th>
+                        <th> V </th>
+                        <th> S </th>
+                        <th> D</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td class="notAvailable">3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td class="diaSelec">6</td>
+                        <td class="notAvailable">7</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td class="notAvailable">12</td>
+                        <td>13</td>
+                        <td class="notAvailable">14</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td class="notAvailable">17</td>
+                        <td class="notAvailable">18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td class="notAvailable">21</td>
+                    </tr>
+                    <tr>
+                        <td class="notAvailable">22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td class="notAvailable">27</td>
+                        <td class="notAvailable">28</td>
+                    </tr>
+                    <tr>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                        <td class="nextMonth">1</td>
+                        <td class="nextMonth">2</td>
+                        <td class="nextMonth">3</td>
+                        <td class="nextMonth">4</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="horasDisp">
+            Horas disponibles para el sábado 6 de enero
+            <div class="horasDispL">
+                <ul>
+                    <li>10:00</li>
+                    <li>10:30</li>
+                    <li class="horaSelec">12:00</li>
+                    <li>15:00</li>
+                    <li>15:30</li>
+                    <li>16:30</li>
+                    <li>17:00</li>
+                </ul>
+            </div>
+            <div class="confReserva"><button>Confirmar Reserva</button></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

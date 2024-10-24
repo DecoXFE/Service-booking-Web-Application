@@ -1,0 +1,356 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
+/*Body*/
+
+.bodyheader {
+    margin: 0;
+    background:#fff8e6;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    height:900px;
+}
+
+
+/**########################################################
+** 
+**     M     E     N     U           I     Z     Q
+**
+**#########################################################
+**/
+
+.menu{
+    margin:0;
+    padding-top:2px;
+    padding-inline-start: 0;
+}
+
+.menu li{
+    list-style: none;
+    font-size: 20px;
+    font-weight: normal;
+    border: 2px solid #000;
+    width: 100%;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+    text-align:center;
+    margin-top: -2px;
+    margin-left: -2px;
+    display:inline-block;
+}
+
+
+.container {
+    height: 100%;
+    width: 23vw;
+    border-right: 2px solid #000;
+    position: relative;
+    box-shadow: 5px -3px 4px -5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 5px -3px 4px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px -3px 4px -5px rgba(0,0,0,0.75);
+}
+
+.menu li:hover{
+    background-color: #fddbcc;
+}
+
+/**########################################################
+** 
+**     I     N     S     I     D     E
+**
+**#########################################################
+**/
+
+.container2{
+    position:relative;
+    text-align: center;
+    font-size:30px;
+    left:45%;
+    top:-75%;
+    width:40vw;
+    margin:0;
+}
+
+.contenido {
+    position: absolute;
+    top: 20%;
+    right: 8%;
+    transform: translate(0, -50%);
+    text-align: center;
+    font-size: 30px;
+    font-weight: normal;
+    width: 60%;
+    margin: 0;
+}
+
+
+/*Para que no se pueda seleccionar ningún texto*/
+.noSelect{
+    user-select: none;
+}
+.container2 button{
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+
+}
+
+/**########################################################
+** 
+**     FORMULARIO editarCuenta
+**
+**#########################################################
+**/
+
+#editarCuenta form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 45%;
+}
+
+#editarCuenta label {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#editarCuenta input[type="text"],
+#editarCuenta input[type="tel"],
+#editarCuenta input[type="password"],
+#editarCuenta input[type="email"],
+#editarCuenta textarea {
+  width: 80%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#editarCuenta button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#editarCuenta button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+#editarCuenta textarea {
+  height: 100px;
+}
+
+.contenido #editarCuenta input {
+  width: 80%;
+  max-width: 400px; /* Ajusta este valor según tus preferencias */
+}
+
+
+/**########################################################
+** 
+**     FORMULARIO anadirAnuncioContenido
+**
+**#########################################################
+**/
+#anadirAnuncioContenido form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 125%;
+}
+
+#anadirAnuncioContenido label {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#anadirAnuncioContenido input[type="text"],
+#anadirAnuncioContenido input[type="tel"],
+#anadirAnuncioContenido input[type="password"],
+#anadirAnuncioContenido input[type="email"],
+#anadirAnuncioContenido input[type="number"],
+#anadirAnuncioContenido textarea {
+  width: 80%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#anadirAnuncioContenido button[type="button"],
+#anadirAnuncioContenido button[type="submit"] {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+#anadirAnuncioContenido button[type="button"]:hover,
+#anadirAnuncioContenido button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+
+#anadirAnuncioContenido textarea {
+  height: 100px;
+}
+
+.contenido #anadirAnuncioContenido input {
+  width: 80%;
+  max-width: 400px; /* Ajusta este valor según tus preferencias */
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-start; /* Ajusta el alineamiento horizontal según tus preferencias */
+  margin-top: 10px; /* Ajusta el margen superior según tus preferencias */
+}
+
+#serviciosContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-height: 200px; /* Ajusta la altura máxima según tus preferencias */
+  overflow-y: auto;
+}
+
+.servicio {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-basis: 100%; /* Para asegurar que cada par ocupe el ancho completo */
+}
+
+.servicio-label {
+  font-size: 20px;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.servicio-input {
+  flex: 1; /* Para que ocupe el espacio restante */
+  margin-right: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+/**########################################################
+** 
+**     FORMULARIO editarAnuncioContenido
+**
+**#########################################################
+**/
+
+#editarAnuncioContenido form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 125%;
+}
+
+#editarAnuncioContenido label {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#editarAnuncioContenido input[type="text"],
+#editarAnuncioContenido input[type="tel"],
+#editarAnuncioContenido input[type="password"],
+#editarAnuncioContenido input[type="email"],
+#editarAnuncioContenido input[type="number"],
+#editarAnuncioContenido textarea {
+  width: 80%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#editarAnuncioContenido button[type="button"],
+#editarAnuncioContenido button[type="submit"] {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+#editarAnuncioContenido button[type="button"]:hover,
+#editarAnuncioContenido button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+#editarAnuncioContenido textarea {
+  height: 100px;
+}
+
+.contenido #editarAnuncioContenido input {
+  width: 80%;
+  max-width: 400px; /* Ajusta este valor según tus preferencias */
+}
+
+#serviciosContainer2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#serviciosContainer2 .servicio {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#serviciosContainer2 .servicio-label {
+  font-size: 20px;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+#serviciosContainer2 input[type="text"] {
+  flex: 1; /* Para que ocupe el espacio restante */
+  margin-right: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+

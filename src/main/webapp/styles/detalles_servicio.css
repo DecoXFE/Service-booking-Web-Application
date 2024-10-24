@@ -1,0 +1,223 @@
+.imagen-fondo {
+    position: relative;
+}
+
+.imagen-fondo img {
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#cajas {
+    width: 100%;
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#boton-reserva {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+
+}
+
+#boton-reserva button {
+    height: 4rem;
+    width: 12rem;
+    border-radius: 1.5rem;
+    background-color: #ffa895;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#boton-reserva button:hover{
+    cursor: pointer;
+    background-color: #f19c8a;
+    color: #f6f6f6;
+}
+
+#caja-botones-seleccion {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    margin: 3rem 0 1rem 0;
+    background-color: white;
+    border-radius: 1.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#caja-botones-seleccion button {
+    width: 100%;
+    background-color: transparent;
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+}
+
+#contenido {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#detalles {
+    border: none;
+    border-right: 1px solid #d0d0d0;
+    border-radius: 1.5rem 0 0 1.5rem;
+}
+
+#comentarios {
+    border: none;
+    border-left: 1px solid #d0d0d0;
+    border-radius: 0 1.5rem 1.5rem 0;
+}
+
+#caja-botones-seleccion button:hover {
+    cursor: pointer;
+    background-color: #FFD4CB;
+}
+
+/************************ Pestaña Detalles ************************/
+
+#caja-descripcion {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    padding: 3rem;
+    margin: 10px;
+    background-color: white;
+    border-radius: 1.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#descripcion-cabeza {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#icono-titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#puntuacion {
+    display: flex;
+    flex-direction: column;
+}
+
+#descripcion-cabeza img {
+    height: 200px;
+    border: 1px solid #000000;
+    border-radius: 2rem;
+}
+
+#descripcion-cabeza h1 {
+    margin: 2rem;
+}
+
+#caja-horario-precio {
+    width: 70%;
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+#caja-horarios, #caja-precios {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    margin: 0 2rem;
+    background-color: white;
+    border-radius: 1.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#caja-horarios img, #caja-precios img {
+    height: 5rem;
+    margin-top: 2rem;
+}
+
+th, td {
+    padding : 0.5rem;
+}
+
+th:first-child {
+    text-align: start;
+}
+
+#caja-precios li {
+    padding : 0.2rem;
+}
+
+/************************ Pestaña Comentarios ************************/
+
+#caja-comentario {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    margin: 10px;
+    background-color: white;
+    border-radius: 1.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#c1-comentario {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#f1-comentario {
+    display: flex;
+    flex-direction: row;
+}
+
+#icono-cliente {
+    width: 6rem;
+    height: 6rem;
+    border: 1px solid #000000;
+    border-radius: 50%;
+}
+
+#info-cliente {
+    margin-left: 2rem;
+    font-weight: bold;
+}
+
+#texto-comentario {
+    height: 100%;
+    margin: 1.5rem;
+}
+#texto-comentario p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+#c2-comentario {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#c2-comentario img {
+    width: 7rem;
+    height: 7rem;
+    border: 1px solid #000000;
+    border-radius: 40%;
+}

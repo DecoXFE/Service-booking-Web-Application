@@ -1,0 +1,244 @@
+p {
+    font-size: 1rem;
+    margin: 0;
+    padding: 5px;
+}
+
+h1 a {
+    padding-left: 1rem;
+    font-size: 1rem;
+    color: #710071;
+}
+
+h1 a:hover {
+    color: #e13618;
+}
+
+h3 a {
+    text-decoration: none;
+    color: #000000;
+    font-size: large;
+}
+
+h3 a:hover {
+    text-decoration: underline;
+}
+
+button:hover,
+a:hover {
+    cursor: pointer;
+}
+
+#titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#titulo button {
+    height: 2rem;
+    background-color: #ffa895;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+
+#titulo button:hover {
+    background-color: #f19c8a;
+}
+
+.expand {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: bold;
+    align-items: center;
+}
+
+.expand:hover {
+    background-color: #efeeee;
+}
+
+.icon-expand {
+    font-size: 2rem;
+}
+
+#lista-filtros {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.filtro-cab {
+    border-top: 1px grey solid;
+    border-bottom: 1px grey solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filtro-cont {
+    padding: 1rem 0 1rem 1.5rem;
+}
+
+main {
+    margin-top: 2rem;
+    display: flex;
+}
+
+#filtros {
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    margin: 1rem;
+    line-height: 2rem;
+    width: 20%;
+    height: fit-content;
+    min-width: 230px;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 1.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#resultados {
+    flex: 1;
+    margin: 1rem;
+}
+
+#servicios {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.bloque-servicio {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 10px;
+    background-color: white;
+    height: 15rem;
+    border-radius: 1.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.presentacion-cab {
+    display: flex;
+    height: 15%;
+    align-items: center;
+}
+
+.favorito {
+    height: 100%;
+    width: auto;
+}
+
+.boton-favorito {
+    background-color: transparent;
+    border: none;
+    width: auto;
+    height: 100%;
+    padding: 0;
+}
+
+.img-estrella {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.nombre-negocio {
+    padding-left: 1rem;
+}
+
+.nombre-negocio h3 {
+    margin: 0;
+}
+
+.presentacion-cuerpo {
+    padding: 0.5rem;
+    height: 70%;
+    display: flex;
+    flex: 1;
+}
+
+.servicio-c1 {
+    padding: 0.5rem;
+    display: flex;
+    flex: 0.5;
+    align-items: center;
+
+}
+
+.servicio-c1 img {
+    height: 100%;
+    border: 1px solid #000000;
+    border-radius: 2rem;
+}
+
+.servicio-c2 {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    align-items: center;
+}
+
+.descripcion {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.informacion {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.informacion a {
+    color: #710071;
+}
+
+.informacion a:hover {
+    color: #e13618;
+}
+
+.servicio-c3 {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex: 0.5;
+}
+
+.puntuacion,
+.distancia {
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.reserva {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+
+}
+
+.reserva button {
+    height: 4rem;
+    width: 12rem;
+    border-radius: 1.5rem;
+    background-color: #ffa895;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.reserva button:hover{
+    cursor: pointer;
+    background-color: #f19c8a;
+    color: #f6f6f6;
+}
